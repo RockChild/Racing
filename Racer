@@ -1,0 +1,29 @@
+package Racing;
+
+import java.util.GregorianCalendar;
+
+public class Racer {
+private String name, surname;
+private GregorianCalendar birthday=new GregorianCalendar();
+private int number;
+
+public void setName(String name){
+	this.name=name;
+}
+public void setSurname(String surname){
+	this.surname=surname;
+}
+public void setNumber(int number){
+	this.number=number;
+}
+public void setBirthday(int year,int month, int day){
+	try{
+		this.birthday.set(year, month-1, day);
+	}catch (NullPointerException e){
+		System.out.println("Error in format of birthday");
+	}
+}
+//public int getFullAge(){
+//	this.birthday.
+//}
+}
