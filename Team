@@ -1,0 +1,16 @@
+package Racing;
+
+import java.util.ArrayList;
+
+public class Team {
+private ArrayList<Racer> team=new ArrayList();
+private String name;
+
+public void addMember(Racer racer){
+	team.add(racer);
+}
+
+public void setName(String name){
+	this.name=name;
+}
+}
